@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
+
+
+.main {
+  width: 100%;
+  height: 1000px; 
+   background-image: url('./compontes/2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 20px;
+  z-index: 1;
+flex-shrink: 0;
+}
+.logoname{
+  display: inline-block;
+  margin-left:20px ;
+ 
+}
+.nav-options a {
+  text-decoration: none;
+  margin-right: 20px; /* Add space between navigation options */
+  color: var(--Blue-Gray-500, #6D8493);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+font-family: 'Roboto', sans-serif;
+}
+/* Logo styles */
+.logo {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 20px */
+  letter-spacing: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button styles */
+.buttons {
+  display: flex;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Common button styles */
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the Sign Up button */
+.button.signup {
+
+  color: #151D20;
+  width: 124px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border: 1px solid var(--Blue-Gray-900, #151D20);
+border-radius: 4px;
+color: #151D20;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+
+/* Style for the Login button */
+.button.login {
+  background: rgba(35, 135, 192, 0.38);
+  width: 124px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+color: #151D20;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+ .imgmain{
+  position: absolute;
+  top: -5%;
+  right: 0;
+  width: 765px;
+  height: 1048px;
+  z-index: 1;
+  opacity: 1;
+ }
+
+  
+  /* ... Your other styles ... */
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+  align-items: center;
+  background-image: url('./compontes/2.png');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.imgmain {
+  position: absolute;
+  top: -5%;
+  right: 0;
+  width: 765px;
+  height: 1048px;
+  z-index: 1;
+  opacity: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 70px;
+  color: #486284;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  flex: 1; 
+  max-width: 40%; 
+margin-top: 10%;
+}
+
+.content h3 {
+  font-size: 48px;
+}
+
+.content p {
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+
+}
+
+.book, .see{
+ 
+  flex: 1;
+  color: #486284;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 200px;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+color: #151D20;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+margin-right: 20px;
+margin-top: 10%;
+}
+
+.book {
+  background: rgba(35, 135, 192, 0.38); /* Background color with transparency */
+  border: none; /* Border with transparency */
+}
+
+.see {
+  background-color: transparent; /* Transparent background color */
+  border: none; /* No border */
+}
+ .pro{
+  display:flex;
+ }
+ h4{
+  font-size: 48px;
+  margin-right: 8%;
+
+ }
+
+ .about{
+
+  flex: 1;
+  padding: 70px;
+  padding-top: 250px;
+  color: #486284;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  flex: 1; 
+  max-width: 40%; 
+ 
+  mix-blend-mode: multiply;
+ }
+
+ .container{
+  background: #FBFBFB;
+  width: 100%;
+  height: 1000px;
+ 
+ }
+
+ .about h3{
+  font-size: 48px;
+ }
+
+.about p{
+  color: #929294;
+  font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+.imgabout{
+  border: 25px solid  rgba(35, 135, 192, 0.38);
+  position: absolute;
+  width: 575px;
+  height: 470.455px;
+  flex-shrink: 0;
+  right: 0;
+  z-index: 1;
+  margin-right: 5%;
 }
