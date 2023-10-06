@@ -1,11 +1,13 @@
 import React from "react";
 import "../App.css";
-import slide from './45fbe3028c39ea531928600cd60808f9.jpeg'
+import slide from "./11.jpeg";
+
+
 export default function about() {
-  return (
+  return (<>
     <div className="container">
       <div className="about">
-      <div className="imgabout">
+        <div className="imgabout">
           <img src={slide} alt="img" width="575px" height="470.455px" />
         </div>
         <h3>OUR STORY WHO WE ARE</h3>
@@ -19,8 +21,9 @@ export default function about() {
           eaque deleniti veniam iste nostrum. Soluta, officiis a.
         </p>
         <button className="button login">See More</button>
-        
       </div>
+    
     </div>
+    </>
   );
 }
